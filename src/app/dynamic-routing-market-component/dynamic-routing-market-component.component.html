@@ -1,0 +1,14 @@
+<h3>
+  Here is dynamic-routing-market-component works!
+</h3>
+<h5>Market Place </h5>
+<div>
+<div *ngFor="let album of albums" (click)="goToDetailPage(album)" class="panel-body">
+<h3>
+<em>{{album.id}}</em>
+</h3>
+
+</div>
+<router-outlet></router-outlet>
+
+</div>
